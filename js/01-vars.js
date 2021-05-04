@@ -25,26 +25,27 @@ const vardas = 'Vardenis';
 console.log(vardas);
 
 const arSninga = false;
-console.log('Ar sninga:' arTeigiama);
+console.log('Ar sninga:', arSninga);
 
 const arTeigiama = true;
-console.log('Ar teigiama:' arTeigiama);
+console.log('Ar teigiama:', arTeigiama);
 
-const pazymiai = [10, 2, 8, 4];
+const pazymiai = [10, 2, 8, 4, 6];
 console.log(pazymiai);
 
 const zodynas = ['labas', 'rytas', 'sakau', 'tau'];
 console.log(zodynas);
 
 const petras = {
-    vardas: 'Petras';
-    amzius: 99;
-    gyvenamojiVieta: 'Gatve g. 1-3, Miestas';
+    vardas: 'Petras',
+    amzius: 99,
+    gyvenamojiVieta: 'Gatve g. 1-3, Miestas',
     vaikai: [
         {
-            vardas: 'Onute';
-            amzius: 67;
+            vardas: 'Onute',
+            amzius: 67
         }
     ]
 };
-console.log(petras);
+console.log(petras); 
+ 
