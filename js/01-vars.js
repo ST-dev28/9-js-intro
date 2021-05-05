@@ -1,6 +1,6 @@
 /*
 
-INICIAVIMO BUDAS (keiciamumas is scope):
+INICIAVIMO BUDAS (keiciamumas ir scope):
 const - nekeiciama reiksme
 let - keiciama reiksme
 var - keiciama reiksme
@@ -11,7 +11,7 @@ string (tekstas)
 boolean (logine reiksme)
 array (sarasas, masyvas, matrica)
 object (objektas)
-null (reiksme, kuri neegzistuoja, bet yra)
+null (reiksme kuri neegzistuoja, bet yra)
 undefined (neapibrezta)
 map
 set
@@ -47,5 +47,4 @@ const petras = {
         }
     ]
 };
-console.log(petras); 
- 
+console.log(petras);

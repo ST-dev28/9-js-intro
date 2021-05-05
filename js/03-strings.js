@@ -72,6 +72,17 @@ const H2 = `<header>
             </header>`;
 console.log(H2);
 
+const H0 = '<header>' +
+                '<img>' +
+                '<nav>' +
+                    '<a><a/a>' +
+                    '<a><a/a>' +
+                    '<a><a/a>' +
+                    '<a><a/a>' +
+                '</nav>' +
+            '</header>' +;
+console.log(H0);
+
 //arba
 
 const H3 = `<header>
