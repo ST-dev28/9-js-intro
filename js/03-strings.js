@@ -1,10 +1,10 @@
 /*
 STRINGS (tekstas)
 
-iniciacimo budai:
+inicijavimo budai:
 - viengubos (') kabutes
-- dvigubos (") kabutes
-- backtick (`) 
+- dvygubos (") kabutes
+- backtick (`) kabutes
 
 */
 
@@ -14,22 +14,21 @@ const kabutes2 = "rytas";
 console.log(kabutes1);
 console.log(kabutes2);
 
-// Viengubos (') kabutes. 
+// Viengubos (') kabutes.
 const kabutes21 = "Viengubos (') kabutes.";
 console.log(kabutes21);
 
-// Dvigubos (") kabutes.
-const kabutes12 = 'Dvigubos (") kabutes.';
+// Dvygubos (") kabutes.
+const kabutes12 = 'Dvygubos (") kabutes.';
 console.log(kabutes12);
 
-// Viengubos (') kabutes ir dvigubos (") kabutes.
-const kabutes1e = 'Viengubos (\') kabutes ir dvigubos (") kabutes.'
+// Viengubos (') ir dvygubos (") kabutes.
+const kabutes1e = 'Viengubos (\') ir dvygubos (") kabutes.';
 console.log(kabutes1e);
-
-const kabutes2e = "Viengubos (') kabutes ir dvigubos (\") kabutes."
+const kabutes2e = "Viengubos (') ir dvygubos (\") kabutes.";
 console.log(kabutes2e);
 
-//Tekste backslash \' yra jega!
+// Tekste backslash \' yra jega!
 const backslash = 'Tekste backslash \\\' yra jega!';
 console.log(backslash);
 
@@ -37,20 +36,19 @@ const vardas = 'Vardenis';
 const pavarde = 'Pavardenis';
 
 // Vardenis Pavardenis
-const fullName = vardas + ' ' + pavarde; 
+const fullName = vardas + ' ' + pavarde;
 console.log(fullName);
 
 // Sveiki, as esu Vardenis!
 const sayHi = 'Sveiki, as esu ' + vardas + '!';
 console.log(sayHi);
 
-
 // \n - enter
 // \t - tab
 
 const imgSrc = './img/logo.png';
 const HTML = '<header>\n\
-                <img src="' + imgSrc + '" alt="" class="logo">\n\
+                <img src="' + imgSrc + '" alt="logo" class="logo">\n\
                 <nav>\n\
                     <a href="#">Link</a>\n\
                     <a href="#">Link</a>\n\
@@ -58,11 +56,10 @@ const HTML = '<header>\n\
                     <a href="#">Link</a>\n\
                 </nav>\n\
             </header>';
-
 console.log(HTML);
 
 const H2 = `<header>
-                <img src="` + imgSrc + `" alt="" class="logo">
+                <img src="${imgSrc}" alt="logo" class="logo">
                 <nav>
                     <a href="#">Link</a>
                     <a href="#">Link</a>
@@ -72,33 +69,12 @@ const H2 = `<header>
             </header>`;
 console.log(H2);
 
-const H0 = '<header>' +
-                '<img>' +
-                '<nav>' +
-                    '<a><a/a>' +
-                    '<a><a/a>' +
-                    '<a><a/a>' +
-                    '<a><a/a>' +
-                '</nav>' +
-            '</header>' +;
-console.log(H0);
-
-//arba
-
-const H3 = `<header>
-                <img src="${imgSrc}" alt="" class="logo">
-                <nav>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                </nav>
-            </header>`;
-console.log(H3);
-
-const demo = 'asd ${omgSrc} asd';
+const demo = 'asd ${imgSrc} asd';
 console.log(demo);
 
 
+const hi = 'Good morning!';
+const hiSize = hi.length;
+console.log(hi, hiSize);
 
 
