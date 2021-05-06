@@ -77,4 +77,3 @@ const hi = 'Good morning!';
 const hiSize = hi.length;
 console.log(hi, hiSize);
 
-
