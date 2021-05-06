@@ -16,8 +16,9 @@ let reverse = '';
 //reverse += ', ';
 //reverse += d[0];
 
-reverse += d[3] + ', ' + d[2] + ', ' + d[1] + ', ' + d[0];
+// reverse = d[3] + ', ' + d[2] + ', ' + d[1] + ', ' + d[0];
 
+reverse = `${d[3]}, ${d[2]}, ${d[1]}, ${d[0]}`;
 
 console.log(reverse);
 
