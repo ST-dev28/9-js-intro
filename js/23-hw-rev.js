@@ -5,7 +5,7 @@ pvz.: “abcdef” -> “fedcba”
 
 
 const d = ['a', 'b', 'c', 'd', 'e', 'f'];
-const dr = d.reverse().join();
+const dr = d.reverse().join('');
 
 console.log(dr);
 
