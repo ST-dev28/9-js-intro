@@ -1,10 +1,12 @@
 /*
 NUMBERS
 teigiami, nulis, neigiami
-desimtai, sveikieji
-tikri skaiciai, begalybes, NaN
+desimtainiai, sveikieji  (desimtainiai visada su tasku -> 3.5 , 10.15)
+tikri skaiciai, begalybes (infinity), NaN (not a number)
 
 */
+
+//sveikieji: teigiami, nulis, neigiami:
 
 const teigiamas = 5;
 const neigiamas = -8;
@@ -13,18 +15,26 @@ const nulisMinus = -0;
 
 console.log(nulis, nulisMinus);
 
+// desimtainiai:
+
 const desimtainis = 3.141592564;
 console.log(desimtainis);
+
+// begalybes: 
 
 const begalybe = Infinity;
 const begalybeMinus = -Infinity;
 console.log(begalybe, begalybeMinus);
+
+// NaN: 
 
 const nesamone = NaN;
 console.log(nesamone);
 
 const puseZodzio = 'labas' / 2;
 console.log(puseZodzio);
+
+console.log('----------------')
 
 const a = 2;
 const b = 3;

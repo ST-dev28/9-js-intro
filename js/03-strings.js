@@ -1,9 +1,9 @@
 /*
-STRINGS (tekstas)
+STRINGS (tekstai)
 
 inicijavimo budai:
 - viengubos (') kabutes
-- dvygubos (") kabutes
+- dvigubos (") kabutes
 - backtick (`) kabutes
 
 */
@@ -15,22 +15,28 @@ console.log(kabutes1);
 console.log(kabutes2);
 
 // Viengubos (') kabutes.
-const kabutes21 = "Viengubos (') kabutes.";
-console.log(kabutes21);
-
-// Dvygubos (") kabutes.
-const kabutes12 = 'Dvygubos (") kabutes.';
+const kabutes12 = "Viengubos (') kabutes.";  //jei tekste nau yra vienguba kabute, panaudoti dvigubas
 console.log(kabutes12);
 
-// Viengubos (') ir dvygubos (") kabutes.
-const kabutes1e = 'Viengubos (\') ir dvygubos (") kabutes.';
+// Dvygubos (") kabutes.
+const kabutes22 = 'Dvigubos (") kabutes.';   //jei tekste nau yra dvigubos kabutee, panaudoti viengubas
+console.log(kabutes22);
+    // tekstas yra skaitomas tarp dvieju tokiu paciu kabuciu
+
+// Viengubos (') ir dvigubos (") kabutes.
+const kabutes1e = 'Viengubos (\') ir dvigubos (") kabutes.';
 console.log(kabutes1e);
-const kabutes2e = "Viengubos (') ir dvygubos (\") kabutes.";
+
+const kabutes2e = "Viengubos (') ir dvigubos (\") kabutes.";
 console.log(kabutes2e);
+/* naudoti backslash \ simbolio praskipinimui, t.y. ignoruoti kaip funkcini 
+elementa ir atvaizduoti ji kaip tekstini elementa
+*/
 
 // Tekste backslash \' yra jega!
 const backslash = 'Tekste backslash \\\' yra jega!';
 console.log(backslash);
+
 
 const vardas = 'Vardenis';
 const pavarde = 'Pavardenis';
@@ -43,8 +49,10 @@ console.log(fullName);
 const sayHi = 'Sveiki, as esu ' + vardas + '!';
 console.log(sayHi);
 
-// \n - enter
-// \t - tab
+console.log('-----------------');
+
+// \n => enter
+// \t => tab
 
 const imgSrc = './img/logo.png';
 const HTML = '<header>\n\
@@ -58,6 +66,8 @@ const HTML = '<header>\n\
             </header>';
 console.log(HTML);
 
+// arba: 
+
 const H2 = `<header>
                 <img src="${imgSrc}" alt="logo" class="logo">
                 <nav>
@@ -68,6 +78,8 @@ const H2 = `<header>
                 </nav>
             </header>`;
 console.log(H2);
+
+console.log('-----------------');
 
 const demo = 'asd ${imgSrc} asd';
 console.log(demo);
