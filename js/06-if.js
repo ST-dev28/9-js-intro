@@ -31,7 +31,7 @@ if (a === b) {
     console.log('ne');
 }
 
-const e = 'labas';
+const e = 'labas';    //tekstu atveju IF klausia: tuscias ar netuscias
 const f = 'rytas';
 
 if (e === f) {
@@ -40,7 +40,9 @@ if (e === f) {
     console.log('ne');
 }
 
-    //nera logikos
+console.log('--------------------');
+
+//nera logikos, tokios salygos buti negalit. Tipai turi buti vienos rusies
 
 const c = 1;                  
 const d = true;
@@ -50,7 +52,8 @@ if (c == d) {
 } else {
     console.log('ne');
 }
-    //
+
+console.log('--------------------');
 
     const akys = 'melynos';
 
@@ -83,8 +86,8 @@ if (c == d) {
     
     console.log('--------------------');
     
-    const parosMetas = 'rytas';
-    const arLyja = false;
+    const parosMetas = 'diena';
+    const arLyja = true;
     
     if (parosMetas === 'rytas') {
         if (arLyja) {
