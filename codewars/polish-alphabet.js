@@ -66,8 +66,8 @@ console.log(correctPolishLetters("Maria Skłodowska-Curie"), '->',"Maria Sklodow
 // einame per raides
     //paimu raide
     // jeigu raide yra ne lenkiska
-        //tiesiog idedame prie onvertedString
+        //tiesiog idedame prie convertedString
     // jei ji lenkiska
-        // pridedame prie onvertedString atitinkama lotyniska tos raides versija
+        // pridedame prie convertedString atitinkama lotyniska tos raides versija
 
         

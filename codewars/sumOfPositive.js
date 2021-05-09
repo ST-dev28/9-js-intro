@@ -28,7 +28,7 @@ console.log(positiveSum([-1,2,3,4,-5]), '->', 9);
 
     // einam per skaiciu sarasa
         // pasiimu skaiciu
-            //jei ar yra teigiamas
+            //jei jis yra teigiamas
                 //pridedu prie bendros sumos
 
     // graziname bendros sumos rezultata

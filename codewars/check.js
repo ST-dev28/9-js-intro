@@ -9,7 +9,7 @@ function check(a, x) {
     for (let i = 0; i < a.length; i++) {                               
         const skaicius = a[i]; 
         
-        if (skaicius ===x) {
+        if (skaicius === x) {
             return true;
         }               
     }                                         
