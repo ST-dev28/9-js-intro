@@ -59,3 +59,13 @@ console.log(getDrinkByProfession("poLiTiCian"), '->', "Your tax dollars", "'Poli
 console.log(getDrinkByProfession("rapper"), '->', "Cristal", "'Rapper' should map to 'Cristal'");
 console.log(getDrinkByProfession("pundit"), '->', "Beer", "'Pundit' should map to 'Beer'");
 console.log(getDrinkByProfession("Pug"), '->', "Beer", "'Pug' should map to 'Beer'");
+
+
+console.log('----------------');
+
+function doubleInteger(i) {
+ 
+    return i * 2;
+  }
+
+  console.log(doubleInteger(2), 4);
