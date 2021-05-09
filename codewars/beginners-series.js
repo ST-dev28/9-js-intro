@@ -11,13 +11,15 @@ Input constraints:
 0 <= h <= 23
 0 <= m <= 59
 0 <= s <= 59
+
+1s = 1000ms
 */
 
 function past(h, m, s) {
   let suma = '';
   const val = 24 * 1000; 
-  const min = 61 * 1000;
-  const sek = 61 * 1000; 
+  const min = 59 * 1000;
+  const sek = 59 * 1000; 
 
        if (m >= 1) {
              suma = min;       
