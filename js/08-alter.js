@@ -1,5 +1,5 @@
 /*
-alternuojanti eilute
+alternuojanti eilute  (elementas -> kiekvienas sekantis pagal eile)
 */
 
 const list = [10, 2, 8, 4, 6];

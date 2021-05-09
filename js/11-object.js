@@ -9,6 +9,8 @@ const petras = {
     'likes banana': true
 };
 
+console.log(petras);
+
 const maryte = {
     name: 'Matyre',
     age: 87,
@@ -18,6 +20,8 @@ const maryte = {
 
 console.log(petras.name, petras.age, petras.color);
 
+// universalus uzrasymo budas: 
+
 console.log(petras["name"]);
 console.log(petras["age"]);
 console.log(petras["color"]);
@@ -25,14 +29,22 @@ console.log(petras["likes banana"]);
 
 console.log('--------------');
 
-// console.log(maryte.name);
-// console.log(maryte.color);
-// console.log(maryte.age);
+/* galimas ir toks uzrasymo variantas => supaprastintas, bet tik tuomet,  
+kai raktazodziai yra vientisi zodziai */
+
+console.log(maryte.name);
+console.log(maryte.color);
+console.log(maryte.age);
+console.log(maryte.likesBanana);
+
+console.log('--------------');
 
 const gyventojai = [petras, maryte];
 
 console.log(gyventojai[0].name);
 console.log(gyventojai[1].age);
+
+console.log('--------------');
 
 const batas = {
     name: 'Kaliosas 3000',
@@ -57,8 +69,10 @@ console.log(batas.pricing[0]);
 console.log(batas.pricing[1]);
 console.log(batas.pricing[2]);
 
+console.log('--------------');
+
 const kepure = {
-    name: 'Skribeliukas',
+    name: 'Skrybeliukas',
     color: 'white',
     pricing: {
         lt: 99,

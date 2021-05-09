@@ -1,7 +1,6 @@
 /*
 Duotas array su tekstinemis reiksmemis (string)
 Reikia: sujungti juos atbulai iterpiant ", "
-
 */
 
 //labas, rytas, tau, sakau

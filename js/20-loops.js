@@ -1,7 +1,7 @@
 /*
 
 LOOPS - ciklai
-proecesu kartojimas N kartu arba tol kol reikia
+procesu kartojimas N kartu arba tol, kol reikia
 
 galimi variantai: 
 for

@@ -4,7 +4,6 @@ Automobilis:
 - kuro sanaudos (l/100km)     5
 - norimas nuvaziuoti atstumas (kilometrais)   400
 
-
 Ar pavyks nuvaziuoti norima atstuma su turimu kuro kiekiu?
 */
 

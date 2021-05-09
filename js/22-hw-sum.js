@@ -8,6 +8,25 @@ E. -50 - 50
 F. -70 - 30
 
 */
+  
+function sum(min, max) {
+  let sumBetween = 0;
+  for (let i = min; i <= max; i++) {
+    sumBetween += i;
+  }
+  return sumBetween;
+}
+
+console.log(sum(0, 0));
+console.log(sum(0, 4));
+console.log(sum(0, 100));
+console.log(sum(574, 815));
+console.log(sum(-50, 50));
+console.log(sum(-70, 30));
+
+console.log('------------------------------');
+  
+// arba kiekvienas variantas atskirai
 
 const minA = 0;
 const maxA = 0; 
@@ -20,7 +39,7 @@ function sumA(numCount) {
     return sumBetween;
   }
   
-  console.log(sumA([0, 0]));
+  console.log(sumA(0, 0));
 
   
   console.log('------------------------------');
@@ -36,7 +55,7 @@ function sumB(numCount) {
     return sumBetween;
   }
   
-  console.log(sumB([0, 4]));
+  console.log(sumB(0, 4));
 
   console.log('------------------------------');
 
@@ -51,7 +70,7 @@ function sumC(numCount) {
     return sumBetween;
   }
   
-  console.log(sumC([0, 100]));
+  console.log(sumC(0, 100));
 
   console.log('------------------------------');
 
@@ -66,7 +85,7 @@ function sumD(numCount) {
     return sumBetween;
   }
   
-  console.log(sumD([574, 815]));
+  console.log(sumD([574, 815]));   // gali buti intervalas tarp [] arba tik ()
 
 
   console.log('------------------------------');
@@ -98,7 +117,4 @@ function sumF(numCount) {
   }
   
   console.log(sumF([-70, 30]));
-  
-
-
   

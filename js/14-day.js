@@ -29,3 +29,11 @@ console.log(parosMetas(10, 39), '->', 'rytas');
 console.log(parosMetas(18, 39), '->', 'diena');
 console.log(parosMetas(23, 39), '->', 'vakaras');
 
+
+/* pasitikrinimui, ka reikia gauti:
+ function parosMetas(val, min) {
+   console.log('val.', val);
+   console.log('min.', min);
+      return 'metas';
+  }
+  */

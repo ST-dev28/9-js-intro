@@ -1,4 +1,9 @@
-/* SWITCH nezino, kas yra intervalas, tam naudojamas IF */
+/* 
+Switch naudojamas procesams
+
+Switch nezino, kas yra intervalas (> <), tam naudojamas IF 
+su switch dirbama kaip su zodynu
+*/
 
 const akys = 'green';
 
@@ -20,6 +25,8 @@ switch (akys) {
         break;
 }
 
+// analogas su IF:
+
 if (akys === 'blue') {
     console.log('Melynos');
 } else if (akys === 'green') {
@@ -32,7 +39,7 @@ if (akys === 'blue') {
 
 console.log('--------------------');
 
-const day = 2.5;
+const day = 2;
 
 switch (day) {
     case 1:
@@ -63,7 +70,29 @@ switch (day) {
         break;
 }
 
-//alternatyvus variantas:
+//alternatyvus variantas su IF: 
+
+if (day === 1) {
+    console.log('Darbo diena');
+} else if (day === 2) {
+    console.log('Darbo diena');
+} else if (day === 3) {
+    console.log('Darbo diena');
+} else if (day === 4) {
+    console.log('Darbo diena');
+} else if (day === 5) {
+    console.log('Darbo diena');
+} else if (day === 6) {
+    console.log('Savaitgalis');
+} else if (day === 6) {
+    console.log('Savaitgalis');
+} else {
+    console.log('Neatpazinta savaites diena');
+}
+
+console.log('--------------------');
+
+//alternatyvus sutrumpintas variantas:
 
 switch (day) {
     case 1:
@@ -84,9 +113,9 @@ switch (day) {
         break;
 }
 
-// IF analogiskas variantas:
+// IF analogiskas sutrumpintas variantas:
 
-if (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) {
+if (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) {    //loginis operatorius || => arba
     console.log('Darbo diena');
 } else if (day === 6 || day === 7) {
     console.log('Savaitgalis');
@@ -94,9 +123,9 @@ if (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) {
     console.log('Neatpazinta savaites diena');
 }
 
-// kai turim nelygini skaiciu:
+// kai turim kintamaji nelygini skaiciu:
 
-if (day >= 0 && day < 6) {
+if (day >= 0 && day < 6) {              //loginis operatorius && => ir
     console.log('Darbo diena');
 } else if (day >= 6 && day < 7) {
     console.log('Savaitgalis');
@@ -107,6 +136,8 @@ if (day >= 0 && day < 6) {
 console.log('--------------------');
 
 /*
+PROCESAS - step by step
+
 Arbatos paruosimo procesas:
 0) paimti puodeli
 1) isideti arbatos
@@ -116,7 +147,7 @@ Arbatos paruosimo procesas:
 5) gerti
 */
 
-const processStep = 0;
+const processStep = 0;   //skaicius rodo, nuo kurios vietos pagal eile noriu matyti procesa
 
 switch (processStep) {
     case 0:
