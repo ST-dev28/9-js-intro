@@ -9,47 +9,18 @@ Return a new array (a tuple in Python) with [youngest age, oldest age,
 difference between the youngest and oldest age].
 */
 
+
 function differenceInAges(ages) {
     let difference = 0; 
-     
-    for (let i = 0; i < ages.length; i++) {                               
-        const years = ages[i]; 
-        
-        if (years >= 82) {
-            console.log(years);
-        }  else if (years <= 14) {
-            console.log(years);
-        }                       
+
+    const min = Math.min(...ages);
+    const max = Math.max(...ages);
+    
+    for (let i = min; i <= max; i++) {                               
+        difference = max - min;                     
     }                                         
-    return false;                                          
+    return [min, max, difference];                                          
 }
-
-
-/*
-function differenceInAges(ages) {
-    let difference = 0;
-    let maxValue = 0;
-    let minValue = 0;
-
-    for (i = 0; i < ages.length; i++) {
-        if (ages[i] > maxValue) {
-            maxValue = ages[i];
-            console.log(maxValue);
-        }
-    }
-    for (i = 0; i < ages.length; i++) {
-        if (ages[i] > minValue) {
-                minValue = ages[i];
-                console.log(minValue);          
-        }
-    }
-        if (maxValue > minValue) {
-            difference = maxValue - minValue;
-            
-        }
-    return difference; 
-}
-*/
 
 
 console.log(differenceInAges([82, 15, 6, 38, 35]), '->', [6, 82, 76]);
