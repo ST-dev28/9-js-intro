@@ -44,3 +44,6 @@ return plytuPlotyje * plytuAukstyje;
 console.log(bricks([1, 2], 1, 0.1, 0.2), '->', 150);
 console.log(bricks([1, 1, 1], 1, 0.1, 0.2), '->', 150);
 console.log(bricks([2, 1, 3], 0.5, 0.1, 0.2), '->', 150);
+console.log(bricks([1], 1, 0.1, 0.2), '->', 50);
+console.log(bricks([1.05], 1.05, 0.1, 0.2), '->', 66);
+
