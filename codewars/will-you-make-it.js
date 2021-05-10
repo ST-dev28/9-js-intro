@@ -10,9 +10,6 @@ possible to get to the pump or not. Function should return true
 The input values are always positive.
 */
 
-//const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    // TODO
- // };
 
 function zeroFuel(distanceToPump, mpg, fuelLeft) {
     const distancePossible = fuelLeft * mpg;
