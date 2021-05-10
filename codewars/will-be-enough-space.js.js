@@ -19,7 +19,7 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 */
 
 function enough(cap, on, wait) {
-    let qty = '';
+  
     const people = on + wait; 
 
     if (people > cap) {
@@ -28,7 +28,7 @@ function enough(cap, on, wait) {
         return 0;
     }
 }
-         
+       
   
   console.log(enough(10, 5, 5), '->',  0);
   console.log(enough(100, 60, 50), '->', 10);
