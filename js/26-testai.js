@@ -7,7 +7,6 @@ Gaminam pieno kokteilius.
 Rasti, kiek reikia tureti karviu, norint patenkinti visus uzsakymus?
 */
 
-
 function milk(uzsakymai, porcija, pienoIsKarves) {
 
     const reikiaPieno = uzsakymai * porcija;
