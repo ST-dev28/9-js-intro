@@ -24,7 +24,6 @@ console.log('-------------------------------');
 
 function milk(uzsakymai, porcija, pienoIsKarves) {
     // validation
-
    
     if (typeof uzsakymai === 'undefined') {        // jei parametras neduotas
         return 'ERROR: neduotas pirmasis parametras';
@@ -32,6 +31,16 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
     if (typeof uzsakymai !== 'number') {           // jei mano uzsakymu tipas yra ne skaicius
         return 'ERROR: pirmas parametras turi buti skaicius';
     }
+    if (isNaN(uzsakymai)) {
+        return 'ERROR: pirmas parametras negali buti Nan';
+    }
+    if (!isFinite(uzsakymai)) {                     // isFinite - baigtine begalybe
+        return 'ERROR: pirmas parametras negali buti begalybe';
+    }
+    if (!isFinite(uzsakymai)) {                    //ARBA vietoj isNan ir isFinite
+        return 'ERROR: pirmas parametras negali buti ${uzsakymai}';
+    }
+
     if (uzsakymai < 0) {                           // jei uzsakymu skaicius yra neigiamas
         return 'ERROR: pirmas parametras negali buti neigiamas';
     }
@@ -45,6 +54,12 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
     if (typeof porcija !== 'number') {
         return 'ERROR: antras parametras turi buti skaicius';
     }
+    if (isNaN(porcija)) {
+        return 'ERROR: antras parametras negali buti Nan';
+    }
+    if (!isFinite(porcija)) {
+        return 'ERROR: antras parametras negali buti begalybe';
+    }
     if (porcija < 0) {
         return 'ERROR: antras parametras negali buti neigiamas';
     }
@@ -55,6 +70,12 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
     if (typeof pienoIsKarves !== 'number') {
         return 'ERROR: trecias parametras turi buti skaicius';
     }
+    if (isNaN(pienoIsKarves)) {
+        return 'ERROR: trecias parametras negali buti Nan';
+    }
+    if (!isFinite(pienoIsKarves)) {
+        return 'ERROR: trecias parametras negali buti begalybe';
+    }   
     if (pienoIsKarves <= 0) {
         return 'ERROR: trecias parametras turi buti didesnis uz nuli';
     }
@@ -77,14 +98,16 @@ console.log(milk(100, 0.5));
 console.log(milk(100));
 console.log(milk());
 console.log(milk(2.5, 0.5, 9));
+console.log(milk(NaN, 0.5, 9));
+console.log(milk(10, NaN, 9));
+console.log(milk(10, 0.5, NaN));
+console.log(milk(Infinity, 0.5, 9));
+console.log(milk(100, Infinity, 9));
+console.log(milk(100, 0.5, Infinity));
+
 
 console.log(milk(10, 0.5, 9), '->', 1);
 console.log(milk(100, 0.5, 9), '->', 6);
 
-console.log(milk(NaN, 0.5, 9));
-console.log(milk(Infinity, 0.5, 9));
-console.log(milk(10, NaN, 9), '->', 1);
-console.log(milk(100, Infinity, 9), '->', 6);
-console.log(milk(10, 0.5, NaN), '->', 1);
-console.log(milk(100, 0.5, Infinity), '->', 6); 
+ 
 
