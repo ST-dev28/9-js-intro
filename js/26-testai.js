@@ -24,16 +24,18 @@ console.log('-------------------------------');
 
 function milk(uzsakymai, porcija, pienoIsKarves) {
     // validation
-    if (typeof uzsakymai === 'undefined') {
+
+   
+    if (typeof uzsakymai === 'undefined') {        // jei parametras neduotas
         return 'ERROR: neduotas pirmasis parametras';
     }
-    if (typeof uzsakymai !== 'number') {
+    if (typeof uzsakymai !== 'number') {           // jei mano uzsakymu tipas yra ne skaicius
         return 'ERROR: pirmas parametras turi buti skaicius';
     }
-    if (uzsakymai < 0) {
+    if (uzsakymai < 0) {                           // jei uzsakymu skaicius yra neigiamas
         return 'ERROR: pirmas parametras negali buti neigiamas';
     }
-    if (uzsakymai % 1 !== 0) {
+    if (uzsakymai % 1 !== 0) {                     // jei uzsakymu skaicius yra ne sveikasis sk.
         return 'ERROR: pirmas parametras turi buti sveikasis skaicius';
     }
 
