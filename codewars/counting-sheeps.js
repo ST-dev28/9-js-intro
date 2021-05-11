@@ -11,20 +11,39 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
+/* WRONG, NOT FINISHED :
 function countSheeps(arrayOfSheep) {
-   
-    const total = array1.length;
-    console.log(total);
-      
-
-   
-
+    let sheeps = 0;
+    for (let i = 0; i <= arrayOfSheep.length; i++) {
+    sheeps += arrayOfSheep[i]; 
+  }
+  return sheeps;
 }
+*/
+/*
+function countSheeps(arrayOfSheep) {
+  let counter = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+      if(arrayOfSheep[i]) counter += 1;
+  }
+  return counter;
+}
+*/
 
-
-
-
-
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+/*
+function countSheeps(arrayOfSheep) {
+  var num = 0;
+  
+  for(var i = 0; i < arrayOfSheep.length; i++)
+    if(arrayOfSheep[i] == true)
+      num++;
+      
+  return num;
+}
+*/
 
 
   var array1 = [true,  true,  true,  false,
