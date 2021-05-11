@@ -11,16 +11,7 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
-/* WRONG, NOT FINISHED :
-function countSheeps(arrayOfSheep) {
-    let sheeps = 0;
-    for (let i = 0; i <= arrayOfSheep.length; i++) {
-    sheeps += arrayOfSheep[i]; 
-  }
-  return sheeps;
-}
-*/
-/*
+
 function countSheeps(arrayOfSheep) {
   let counter = 0;
   for (let i = 0; i < arrayOfSheep.length; i++) {
@@ -28,12 +19,15 @@ function countSheeps(arrayOfSheep) {
   }
   return counter;
 }
-*/
 
+
+// ARBA
 function countSheeps(arrayOfSheeps) {
   return arrayOfSheeps.filter(Boolean).length;
 }
-/*
+
+
+// ARBA
 function countSheeps(arrayOfSheep) {
   var num = 0;
   
@@ -43,7 +37,7 @@ function countSheeps(arrayOfSheep) {
       
   return num;
 }
-*/
+
 
 
   var array1 = [true,  true,  true,  false,
