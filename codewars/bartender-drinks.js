@@ -17,38 +17,50 @@ correct capitalization. For example, the input "pOLitiCIaN" should still
 return "Your tax dollars".
 */
 
-function getDrinkByProfession(param) {
-    let exchange = ''; 
-    for (let i = 0; i < param.length; i++) {
-        const text = param[i];
-    
-        switch (text) {
-            case 'Jabroni':
-                exchange = 'Patron Tequila';
-                break;
-            case 'School Counselor':
-                exchange = 'Anything with Alcohol';
-                break;
-            case 'Programmer':
-                exchange = 'Hipster Craft Beer';
-                break;
-            case 'Bike Gang Member':
-                exchange = 'Moonshine';
-                break;
-            case 'Politician':
-                exchange = 'Your tax dollars';
-                break;
-            case 'Rapper':
-                exchange = 'Cristal';
-                break;
-            
-            default: 
-            exchange = 'Beer'; 
-            break; 
-        }
-    }    
-    return exchange; 
+function getDrinkByProfession(param){
+	var paramText = param.toLowerCase();
+	switch(paramText) {
+		case "jabroni":
+			return "Patron Tequila"
+			break;
+		case "school counselor":
+			return "Anything with Alcohol"
+			break;
+		case "programmer":
+			return "Hipster Craft Beer"
+			break;
+		case "bike gang member":
+			return "Moonshine"
+			break;
+		case "politician":
+			return "Your tax dollars"
+			break;
+		case "rapper":
+			return "Cristal"
+			break;
+		default:
+			if(paramText.length > 0) {
+				return "Beer"
+			}
+		break;
+	}     
 }
+
+
+// ARBA
+function getDrinkByProfession(param) {
+    param = param.toLowerCase();
+    
+    switch(param) {
+      case "jabroni": return "Patron Tequila";
+      case "school counselor": return "Anything with Alcohol";
+      case "programmer": return "Hipster Craft Beer";
+      case "bike gang member": return "Moonshine";
+      case "politician": return "Your tax dollars";
+      case "rapper": return "Cristal";
+      default: return "Beer";
+    }
+  }
 
 
 console.log(getDrinkByProfession("jabrOni"), '->', "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
@@ -63,9 +75,13 @@ console.log(getDrinkByProfession("Pug"), '->', "Beer", "'Pug' should map to 'Bee
 
 console.log('----------------');
 
+/*
+Code as fast as you can! You need to double the integer and return it.
+*/
+
 function doubleInteger(i) {
  
     return i * 2;
   }
 
-  console.log(doubleInteger(2), 4);
+  console.log(doubleInteger(2), '->', 4);
