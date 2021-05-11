@@ -31,9 +31,8 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
         } else {
             calculate = redLeft / blueLeft;
         }
-    return calculate; 
+    return Math.floor(calculate * 10) / 10; 
   }
-
 
 
 console.log(guessBlue(5, 5, 2, 3), '->', 0.6);
