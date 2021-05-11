@@ -35,7 +35,7 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
         return 'ERROR: pirmas parametras negali buti Nan';
     }
     if (!isFinite(uzsakymai)) {                     // isFinite - baigtine begalybe
-        return 'ERROR: pirmas parametras negali buti begalybe';
+        return `ERROR: pirmas parametras negali buti ${uzsakymai}`;
     }
     if (!isFinite(uzsakymai)) {                    //ARBA vietoj isNan ir isFinite
         return 'ERROR: pirmas parametras negali buti ${uzsakymai}';
@@ -60,6 +60,9 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
     if (!isFinite(porcija)) {
         return 'ERROR: antras parametras negali buti begalybe';
     }
+    if (!isFinite(porcija)) {
+        return `ERROR: antras parametras negali buti ${porcija}`;
+    }
     if (porcija < 0) {
         return 'ERROR: antras parametras negali buti neigiamas';
     }
@@ -75,7 +78,10 @@ function milk(uzsakymai, porcija, pienoIsKarves) {
     }
     if (!isFinite(pienoIsKarves)) {
         return 'ERROR: trecias parametras negali buti begalybe';
-    }   
+    }  
+    if (!isFinite(pienoIsKarves)) {
+        return `ERROR: trecias parametras negali buti ${pienoIsKarves}`;
+    }
     if (pienoIsKarves <= 0) {
         return 'ERROR: trecias parametras turi buti didesnis uz nuli';
     }
