@@ -16,16 +16,14 @@ Input constraints:
 */
 
 function past(h, m, s) {
-  let suma = '';
-  const val = 24 * 1000; 
-  const min = 59 * 1000;
-  const sek = 59 * 1000; 
-
-       if (m >= 1) {
-             suma = min;       
-        }     
-    
-    return suma;
+  
+  const val = 60; 
+  const min = 60; 
+  const msek = 1000; 
+  
+  suma = (h * val * min * msek) + (m * min * msek) + (s * msek);
+   
+  return suma;
 }
     
                                      
