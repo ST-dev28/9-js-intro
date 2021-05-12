@@ -6,8 +6,8 @@ You can assume all values in the array are numbers.
 
 function smallEnough(a, limit) {
 
-    for (let i = 0; i < a.length; i++) {
-        skaicius += a[i]; 
+    for (let i = 0; i <= a.length; i++) {
+        const skaicius = a[i]; 
 
         if (limit <= skaicius) {
             return true;                            
