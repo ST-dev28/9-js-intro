@@ -23,18 +23,15 @@ a float. For example, guessBlue(5, 5, 2, 3) should return 0.6.
 */
 
 function guessBlue(blueStart, redStart, bluePulled, redPulled) {
-    let calculate = 0; 
+    
     const blueLeft = blueStart - bluePulled; 
     const redLeft = redStart - redPulled; 
-        if (blueLeft < redLeft) {
-            calculate = blueLeft / redLeft; 
-        } else {
-            calculate = redLeft / blueLeft;
-        }
-    return Math.floor(calculate * 10) / 10; 
+    const totalLeft = blueLeft + redLeft;
+        
+    return blueLeft/totalLeft;  
   }
 
-
+  
 console.log(guessBlue(5, 5, 2, 3), '->', 0.6);
 console.log(guessBlue(5, 7, 4, 3), '->', 0.2);
-console.log(guessBlue(12, 18, 4, 6), '->', 0.6);
+console.log(guessBlue(12, 18, 4, 6), '->', 0.4);
