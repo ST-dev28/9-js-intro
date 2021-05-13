@@ -20,3 +20,5 @@ const c = ['!', 'dienos', 'geros', 'tau', 'linkiu'];
 const cr = c.reverse().join(' ');
 
 console.log(cr);
+
+
