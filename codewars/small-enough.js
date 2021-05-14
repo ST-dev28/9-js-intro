@@ -5,11 +5,11 @@ You can assume all values in the array are numbers.
 */
 
 function smallEnough(a, limit) {
+    const min = Math.min(...a);
+    const max = Math.max(...a);
 
-    for (let i = 0; i <= a.length; i++) {
-        const skaicius = a[i]; 
-
-        if (limit <= skaicius) {
+    for (let i = min; i <= max; i++) {
+        if (limit >= max) {
             return true;                            
         } 
      return false;
