@@ -36,6 +36,17 @@ const getPositions = s => {
 const getPositions = s => [Math.floor(s % 3), Math.floor(s / 3) % 3, Math.floor(s / 9) % 3];
 */ 
 
+/*  ARBA
+const getPositions = s => {
+  let a = [0,0,0];
+  a[0] = Math.floor((s / 1)) % 3
+  a[1] = Math.floor((s/ 3)) % 3
+  a[2] = Math.floor((s/ 9)) % 3
+  
+  return a          
+}
+*/
+
 console.log(getPositions(54),  '->', [0, 0, 0]);
 console.log(getPositions(98),  '->', [2, 2, 1]); 
 console.log(getPositions(3),  '->', [0, 1, 0]);
