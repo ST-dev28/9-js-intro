@@ -12,7 +12,8 @@ function alternateCase(s) {
       } else {
         words += (s[i].toUpperCase())
       }
-    } return words;
+      } 
+     return words;
   }
 
 console.log(alternateCase("abc"), '->', "ABC");
