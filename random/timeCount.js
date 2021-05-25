@@ -36,7 +36,7 @@ const timet = setInterval(() => {
   }
 }, 1000)
 */
-
+/*
 //2) arejuje nurodyta, kiek sekundziu reikia laukti, 
 //kol bus isspausdinta nurodyta reiksme
 
@@ -49,4 +49,20 @@ for (const number of b) {
     console.log(number);
   }, delay * 1000)
 }
+*/
 
+// ARBA
+const c = [2, 3, 1, 4, 2];
+
+function waiting(list) {
+  const time = list[0];
+  setTimeout(() => {
+    console.log(time);
+
+    list.shift()
+    if (list.length > 0) {
+      waiting(list);
+    }
+  }, time * 1000)
+}
+waiting(c);
