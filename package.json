@@ -1,0 +1,24 @@
+{
+  "name": "9-js-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST-dev28/9-js-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST-dev28/9-js-intro/issues"
+  },
+  "homepage": "https://github.com/ST-dev28/9-js-intro#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
